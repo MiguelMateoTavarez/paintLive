@@ -11,11 +11,17 @@
     <div class="content">
         <canvas id="canvas"></canvas>
         <div class="colors">
-            <button id="color1"></button>
-            <button id="color2"></button>
-            <button id="color3"></button>
-            <button id="color4"></button>
-            <button id="color5"></button>
+            <button id="color1" onclick="changeColor('red')"></button>
+            <button id="color2" onclick="changeColor('yellowgreen')"></button>
+            <button id="color3" onclick="changeColor('blue')"></button>
+            <button id="color4" onclick="changeColor('yellow')"></button>
+            <button id="color5" onclick="changeColor('black')"></button>
+        </div>
+        <div class="delete">
+            <button id="btn_delete" onclick="deleteAll()">X</button>
+        </div>
+        <div id="users">
+            Users connected: 0
         </div>
     </div>
     <script src="./socket.io/socket.io.js"></script>

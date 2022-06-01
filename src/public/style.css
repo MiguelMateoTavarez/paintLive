@@ -17,6 +17,15 @@ canvas {
     padding: 10px;
 }
 
+
+.delete {
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    margin-left: 170px;
+}
+
+
 #color1 {
     width: 30px;
     height: 30px;
@@ -60,4 +69,20 @@ canvas {
     border: 0px;
     border-radius: 50%;
     outline: none;
+}
+
+#btn_delete {
+    width: 30px;
+    height: 30px;
+    border-color: #000;
+    color: red;
+}
+
+#users {
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    margin-left: 80%;
+    font-size: 20px;
+    color: green;
 }
