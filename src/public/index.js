@@ -44,13 +44,13 @@ function create_draw(){
     setTimeout(create_draw, 25)
 }
 
-function showDraw(draw) {
+socket.on('show_drawing', (draw)=>{
     context.beginPath()
     context.lineWidth = 3
     context.strokeStyle = draw.color
     context.moveTo(draw.x_position, draw.y_position)
     context.lineTo(draw.previous_position.x_position, draw.previous_position.y_position)
     context.stroke()
-}
+})
 
 create_draw()
