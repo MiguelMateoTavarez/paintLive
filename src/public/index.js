@@ -8,6 +8,7 @@ let previous_position = null
 let color = 'black'
 
 const canvas = document.getElementById('canvas')
+const users = document.getElementById('users')
 const context = canvas.getContext('2d')
 
 const width = window.innerWidth
@@ -65,6 +66,10 @@ socket.on('show_drawing', (draw)=>{
     }else {
         context.clearRect(0, 0, canvas.width, canvas.height)
     }
+})
+
+socket.on('users', (number)=>{
+    users.innerHTML = `Users connected: ${number}`
 })
 
 create_draw()
